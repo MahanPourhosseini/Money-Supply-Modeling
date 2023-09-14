@@ -1,0 +1,214 @@
+{UTF-8}
+Consumption  = A FUNCTION OF( GDP,Population) ~~|
+Consumption=
+	~	Billion Rial
+	~		|
+
+Budget Deficit  = A FUNCTION OF( Government Expenditure,Government Income)
+	~	
+	~		|
+
+Export  = A FUNCTION OF( GDP) ~~|
+Export=
+	~	
+	~		|
+
+GDP  = A FUNCTION OF( Consumption,Export,Import,"Non-Oil GDP",Oil Income,Tax) ~~|
+GDP=
+	~	Billion Rial
+	~		|
+
+Oil Sales=A FUNCTION OF(Oil Sales,Sanctions Intensity) ~~|
+Oil Sales=
+	~	Barrel
+	~		|
+
+Population=A FUNCTION OF(Population,Net Birth Rate) ~~|
+Population=
+	~	
+	~		|
+
+Import  = A FUNCTION OF( GDP) ~~|
+Import=
+	~	
+	~		|
+
+Net Birth Rate=A FUNCTION OF(Net Birth Rate,Population) ~~|
+Net Birth Rate=
+	~	
+	~		|
+
+Oil Income=A FUNCTION OF(Oil Income,Oil Price,Oil Sales) ~~|
+Oil Income=
+	~	Billion Rial
+	~		|
+
+Tax  = A FUNCTION OF( Tax to GDP Ratio) ~~|
+Tax=
+	~	
+	~		|
+
+Oil Price  = A FUNCTION OF( )
+	~	
+	~		|
+
+Savings  = A FUNCTION OF( Consumption,Export,GDP,Government Expenditure,Import) ~~|
+Savings=
+	~	Billion Rial
+	~		|
+
+Sanctions Intensity=A FUNCTION OF(Sanctions Intensity) ~~|
+Sanctions Intensity=
+	~	
+	~		|
+
+Net Capital Stock  = A FUNCTION OF( Total Investment)
+	~	
+	~		|
+
+Government Debts to National Bank  = A FUNCTION OF( Budget Deficit) ~~|
+Government Debts to National Bank=
+	0.5619 * Budget Deficit
+	~	Billion Rial
+	~		|
+
+Total Investment  = A FUNCTION OF( Savings)
+	~	
+	~		|
+
+"Non-Oil GDP"=A FUNCTION OF("Non-Oil GDP",Net Capital Stock) ~~|
+"Non-Oil GDP"=
+	~	Billion Rial
+	~		|
+
+Government Expenditure=A FUNCTION OF(Government Expenditure,"Non-Oil GDP") ~~|
+Government Expenditure=
+	~	Billion Rial
+	~		|
+
+Government Income=A FUNCTION OF(Government Income,Oil Income,Tax) ~~|
+Government Income=
+	~	Billion Rial
+	~		|
+
+Tax to GDP Ratio=A FUNCTION OF(Tax to GDP Ratio) ~~|
+Tax to GDP Ratio=
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 1400
+	~	Year
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 1379
+	~	Year
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Year [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.25
+	~	Year [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|255-255-255|96,96,90,0
+10,1,Government Debts to National Bank,463,534,65,26,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,"Non-Oil GDP",840,228,41,26,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+10,3,GDP,993,349,28,13,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+10,4,Savings,991,641,32,16,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+10,5,Consumption,1268,565,51,17,8,131,0,2,-1,0,0,0,-1--1--1,-1--1--1,|||0-0-0,0,0,0,0,0,0
+10,6,Government Income,667,140,72,19,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+10,7,Oil Income,1240,112,42,15,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+1,8,2,3,1,0,43,0,3,0,0,128-0-128,|||128-0-128,1|(944,239)|
+1,9,7,6,1,0,43,0,3,0,0,128-0-128,|||128-0-128,1|(995,23)|
+1,10,5,4,1,0,45,0,3,0,0,128-0-128,|||128-0-128,1|(1168,646)|
+10,11,Export,1141,491,32,15,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+1,12,11,4,1,0,43,0,3,0,0,128-0-128,|||128-0-128,1|(1115,571)|
+10,13,Tax,950,156,23,12,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+1,14,13,6,1,0,43,0,3,0,0,128-0-128,|||128-0-128,1|(833,85)|
+10,15,Government Expenditure,613,563,64,33,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+1,16,2,15,1,0,43,0,3,0,0,128-0-128,|||128-0-128,1|(642,283)|
+1,17,15,4,1,0,45,0,3,0,0,128-0-128,|||128-0-128,1|(742,650)|
+10,18,Import,835,496,28,15,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+1,19,18,4,1,0,45,0,3,0,0,128-0-128,|||128-0-128,1|(875,595)|
+10,20,Tax to GDP Ratio,1050,90,38,25,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+1,21,20,13,1,0,43,0,3,0,0,128-0-128,|||128-0-128,1|(981,103)|
+10,22,Oil Sales,1349,190,33,19,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+1,23,22,7,1,0,43,0,3,0,0,128-0-128,|||128-0-128,1|(1280,177)|
+10,24,Population,1410,435,44,15,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,25,Net Birth Rate,1407,295,57,19,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+1,26,24,5,1,0,43,0,3,0,0,0-255-0,|||0-255-0,1|(1378,508)|
+1,27,24,25,1,0,43,0,3,0,0,0-255-0,|||0-255-0,1|(1337,359)|
+1,28,25,24,1,0,43,0,3,0,0,0-255-0,|||0-255-0,1|(1483,370)|
+10,29,Net Capital Stock,683,371,45,21,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,30,Total Investment,701,523,46,22,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+1,31,30,29,1,0,43,0,3,0,0,128-0-128,|||128-0-128,1|(677,435)|
+1,32,4,30,1,0,43,0,3,0,0,128-0-128,|||128-0-128,1|(812,620)|
+1,33,29,2,1,0,43,0,3,0,0,128-0-128,|||128-0-128,1|(733,273)|
+10,34,Budget Deficit,506,350,37,21,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+1,35,34,1,1,0,43,0,3,0,0,128-0-128,|||128-0-128,1|(454,406)|
+10,36,Oil Price,1352,22,38,15,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,37,Sanctions Intensity,1437,88,50,25,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+1,38,36,7,1,0,43,0,3,0,0,128-0-128,|||128-0-128,1|(1275,37)|
+1,39,37,22,1,0,45,0,3,0,0,128-0-128,|||128-0-128,1|(1423,144)|
+1,40,15,34,1,0,43,0,3,0,0,128-0-128,|||128-0-128,1|(525,465)|
+1,41,6,34,1,0,45,0,3,0,0,128-0-128,|||128-0-128,1|(557,215)|
+1,42,3,4,0,1,43,0,3,0,0,128-0-128,|||128-0-128,1|(0,0)|
+1,43,3,5,1,1,43,0,3,0,0,128-0-128,|||128-0-128,1|(1233,392)|
+1,44,7,3,1,1,43,0,3,0,0,128-0-128,|||128-0-128,1|(1067,161)|
+1,45,5,3,1,0,43,0,3,0,0,128-0-128,|||128-0-128,1|(1163,411)|
+1,46,18,3,1,0,45,0,3,0,0,128-0-128,|||128-0-128,1|(881,390)|
+1,47,11,3,1,0,43,0,3,0,0,128-0-128,|||128-0-128,1|(1111,409)|
+1,48,3,18,1,0,43,0,3,0,0,128-0-128,|||128-0-128,1|(942,468)|
+1,49,3,11,1,0,43,0,3,0,0,128-0-128,|||128-0-128,1|(1042,459)|
+1,50,13,3,1,0,43,0,3,0,0,128-0-128,|||128-0-128,1|(972,210)|
+12,51,0,1412,364,18,18,4,135,0,3,-1,0,0,0,255-0-0,0-0-0,|||255-0-0,0,0,0,0,0,0
+R
+///---\\\
+:L<%^E!@
+4:Time
+5:GDP
+9:current
+19:90,0
+24:1379
+25:1400
+26:1400
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Times New Roman|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1

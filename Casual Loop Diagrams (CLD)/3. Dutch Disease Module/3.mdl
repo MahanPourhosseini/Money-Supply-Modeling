@@ -1,0 +1,138 @@
+{UTF-8}
+Price Level  = A FUNCTION OF( Liquidity) ~~|
+Price Level=
+	~	
+	~		|
+
+Liquidity  = A FUNCTION OF( Money Multiplier)
+	~	
+	~		|
+
+"Banking Facilities (Loan)"  = A FUNCTION OF( Deposits,Real Interest Rate) ~~|
+"Banking Facilities (Loan)"=
+	~	
+	~		|
+
+Inflation  = A FUNCTION OF( Price Level) ~~|
+Inflation=
+	~	
+	~		|
+
+Nominal Interest Rate  = A FUNCTION OF( )
+	~	
+	~		|
+
+Monetary base=A FUNCTION OF(Monetary base,Liquidity,Money Multiplier) ~~|
+Monetary base=
+	~	
+	~		|
+
+Money Multiplier  = A FUNCTION OF( Reserve Ratio)
+	~	
+	~		|
+
+Real Interest Rate=A FUNCTION OF(Real Interest Rate,Inflation,Nominal Interest Rate) ~~|
+Real Interest Rate=
+	~	
+	~		|
+
+Deposits=A FUNCTION OF(Deposits,Liquidity,Monetary base) ~~|
+Deposits=
+	~	
+	~		|
+
+Reserve Ratio=A FUNCTION OF(Reserve Ratio,"Banking Facilities (Loan)",Deposits) ~~|
+Reserve Ratio=
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 1400
+	~	Year
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 1379
+	~	Year
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Year [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.25
+	~	Year [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|255-255-255|96,96,90,0
+10,1,Deposits,480,261,37,14,8,131,0,2,-1,0,0,0,-1--1--1,-1--1--1,|||0-0-0,0,0,0,0,0,0
+10,2,Monetary base,488,439,55,18,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+1,3,2,1,1,0,45,0,3,0,0,255-192-0,|||255-192-0,1|(520,351)|
+10,4,Price Level,664,211,54,18,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+10,5,Real Interest Rate,300,197,47,21,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+10,6,"Banking Facilities (Loan)",291,409,64,22,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+1,7,1,6,1,0,43,0,3,0,0,0-128-0,|||0-128-0,1|(355,301)|
+10,8,Inflation,462,118,39,13,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+1,9,4,8,1,0,43,0,3,0,0,255-0-0,|||255-0-0,1|(593,143)|
+1,10,8,5,1,0,45,0,3,0,0,255-0-0,|||255-0-0,1|(376,134)|
+10,11,Reserve Ratio,385,597,51,16,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+1,12,6,11,1,0,45,0,3,0,0,0-128-0,|||0-128-0,1|(305,514)|
+1,13,1,11,1,0,43,0,3,0,0,255-192-0,|||255-192-0,1|(364,434)|
+10,14,Liquidity,662,386,42,17,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+1,15,14,2,1,0,43,0,3,0,0,255-192-0,|||255-192-0,1|(601,450)|
+1,16,14,1,1,0,43,0,3,0,0,0-128-0,|||0-128-0,1|(616,315)|
+10,17,Nominal Interest Rate,313,66,47,26,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+1,18,17,5,1,0,43,0,3,0,0,255-0-0,|||255-0-0,1|(277,123)|
+10,19,Money Multiplier,633,554,41,32,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+1,20,19,2,1,0,43,0,3,0,0,255-192-0,|||255-192-0,1|(513,547)|
+1,21,11,19,1,0,45,0,3,0,0,0-128-0,|||0-128-0,1|(508,615)|
+1,22,19,14,1,0,43,0,3,0,0,0-128-0,|||0-128-0,1|(669,477)|
+1,23,14,4,1,0,43,0,3,0,0,255-0-0,|||255-0-0,1|(688,281)|
+1,24,5,6,1,1,45,0,3,0,0,255-0-0,|||255-0-0,1|(263,282)|
+12,25,0,467,196,20,20,5,7,0,3,-1,0,0,0,255-0-0,0-0-0,|||255-0-0,0,0,0,0,0,0
+R
+///---\\\
+:L<%^E!@
+4:Time
+5:Price Level
+9:current
+19:90,0
+24:1379
+25:1400
+26:1400
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Times New Roman|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1

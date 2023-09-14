@@ -1,0 +1,100 @@
+{UTF-8}
+"Banking Facilities (Loan)"  = A FUNCTION OF( Deposits) ~~|
+"Banking Facilities (Loan)"=
+	~	
+	~		|
+
+Deposits  = A FUNCTION OF( Liquidity) ~~|
+Deposits=
+	~	
+	~		|
+
+Liquidity  = A FUNCTION OF( Money Multiplier)
+	~	
+	~		|
+
+Reserve Ratio  = A FUNCTION OF( "Banking Facilities (Loan)") ~~|
+Reserve Ratio=
+	~	
+	~		|
+
+Money Multiplier  = A FUNCTION OF( Reserve Ratio)
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 1400
+	~	Year
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 1379
+	~	Year
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Year [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.25
+	~	Year [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|255-255-255|96,96,130,0
+10,1,Deposits,324,132,37,14,8,131,0,2,-1,0,0,0,-1--1--1,-1--1--1,|||0-0-0,0,0,0,0,0,0
+10,2,"Banking Facilities (Loan)",135,269,64,22,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+1,3,1,2,1,0,43,0,3,0,0,0-128-0,|||0-128-0,1|(201,167)|
+10,4,Reserve Ratio,210,431,51,16,8,131,0,0,-1,0,0,0,0,0,0,0,0,0
+1,5,2,4,1,0,45,0,3,0,0,0-128-0,|||0-128-0,1|(148,357)|
+10,6,Liquidity,493,259,42,17,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+1,7,6,1,1,0,43,0,3,0,0,0-128-0,|||0-128-0,1|(449,179)|
+10,8,Money Multiplier,447,426,34,22,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+1,9,4,8,1,0,45,0,3,0,0,0-128-0,|||0-128-0,1|(322,464)|
+1,10,8,6,1,0,43,0,3,0,0,0-128-0,|||0-128-0,1|(495,340)|
+12,11,0,316,296,20,20,5,7,0,3,-1,0,0,0,255-0-0,0-0-0,|||255-0-0,0,0,0,0,0,0
+R
+///---\\\
+:L<%^E!@
+4:Time
+5:Money Multiplier
+9:current
+19:130,0
+24:1379
+25:1400
+26:1400
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Times New Roman|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
